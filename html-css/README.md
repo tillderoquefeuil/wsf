@@ -43,16 +43,16 @@
 ```
 
 ## Balises
-### Les paragraphes
-```html
-<p>Ceci est un paragraphe</p>
-```
-
 ### les titres
 ```html
 <h1>Titre super important</h1>
 <h2>Titre important</h2>
 <h3>Titre un peu moins important (sous-titre)</h3>
+```
+
+### Les paragraphes
+```html
+<p>Ceci est un paragraphe</p>
 ```
 
 ### Mettre l'emphase
@@ -107,4 +107,72 @@
 
 ```html
 <img src="./image.jpg" alt="la description de l'image" />
+```
+
+# CSS - FUNDAMENTALS
+## Les sélecteurs
+```html
+<h1 id="title-id-1" class="title-class-1">Titre en rouge, italique</h1>
+<h1 id="title-id-2" class="title-class-1 title-class-2">Titre en bleu, italique, souligné</h1>
+<h1 id="title-id-3" class="title-class-2">Titre en vert, souligné </h1>
+```
+- balise
+```css
+h1 {
+    font-family: monospace;
+}
+```
+- class
+```css
+.title-class-1 {
+    font-style: italic;
+}
+.title-class-2 {
+    text-decoration: underline;
+}
+```
+- id
+```css
+#title-id-1 {
+    color: red;
+}
+#title-id-2 {
+    color: blue;
+}
+#title-id-3 {
+    color: green;
+}
+```
+
+## Ajouter son CSS au HTML
+- comme attribut
+```html
+<h1 style="color:red;">Titre en rouge</h1>
+```
+- dans une balise de style
+```html
+<style>
+    h1 {
+        color: red;
+    }
+</style>
+<h1>Titre en rouge</h1>
+```
+- nouveau fichier CSS
+```css
+h1 {
+    color: red;
+}
+```
+```html
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+
+    <body>
+        <h1>Titre en rouge</h1>
+    </body>
+
+</html>
 ```
