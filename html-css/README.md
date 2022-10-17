@@ -112,6 +112,11 @@
 # CSS - FUNDAMENTALS
 ## Les sélecteurs
 ```html
+<h1>Titre en rouge, italique</h1>
+<h1>Titre en bleu, italique, souligné</h1>
+<h1>Titre en vert, souligné </h1>
+```
+```html
 <h1 id="title-id-1" class="title-class-1">Titre en rouge, italique</h1>
 <h1 id="title-id-2" class="title-class-1 title-class-2">Titre en bleu, italique, souligné</h1>
 <h1 id="title-id-3" class="title-class-2">Titre en vert, souligné </h1>
